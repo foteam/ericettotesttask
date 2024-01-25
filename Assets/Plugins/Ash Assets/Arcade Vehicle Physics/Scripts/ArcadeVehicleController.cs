@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,6 +52,7 @@ namespace ArcadeVP
         private float radius, horizontalInput, verticalInput;
         private Vector3 origin;
 
+        public static Action onGameStarted;
         private void Start()
         {
             radius = rb.GetComponent<SphereCollider>().radius;
